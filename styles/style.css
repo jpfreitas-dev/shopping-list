@@ -1,0 +1,30 @@
+@import url(global.css);
+
+body {
+  overflow-x: hidden;
+  padding: 1.5625rem 2rem;
+}
+
+#logo {
+  display: block;
+  margin-inline: auto;
+}
+
+header,
+main {
+  max-width: 39.1875rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
+header {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  
+  & div {
+    display: flex;
+    align-items: center;
+  }
+
+}

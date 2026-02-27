@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Compras</title>
 
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/style.css">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -16,7 +16,35 @@
 </head>
 
 <body>
+  <img id="logo" src="./assets/logo.svg" alt="Logo do site">
 
+  <header>
+    <div>
+      <img src="./assets/arrow-left.svg" alt="Ícone de seta">
+      <a href="#">Voltar</a>
+    </div>
+    <h1>Compras da semana</h1>
+  </header>
+  <main>
+    <section class="add-item">
+      <form>
+        <input type="text">
+        <button type="submit">Adicionar item</button>
+      </form>
+    </section>
+
+    <ul>
+      <li>Pão de forma</li>
+      <li>Café preto</li>
+      <li>Suco de laranja</li>
+      <li>Bolacha</li>
+    </ul>
+
+    <div id="alert">
+      <img src="./assets/warning-circle-filled.svg" alt="Ícone de alerta">
+      <span>O item foi removido da lista</span>
+    </div>
+  </main>
 </body>
 
 </html>
