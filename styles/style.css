@@ -90,13 +90,16 @@ main {
       align-items: center;
       gap: .75rem;
 
+      & form {
+        flex: 1;
+      }
+
       & label {
         display: flex;
         align-items: center;
         gap: .75rem;
         position: relative;
         cursor: pointer;
-        flex: 1;
 
         & input[type="checkbox"] {
           position: absolute;
@@ -128,6 +131,7 @@ main {
 
         & p {
           flex: 1;
+          line-height: 1rem;
         }
       }
 
@@ -152,6 +156,10 @@ main {
     color: var(--always-white);
     padding: .75rem;
     padding-right: .5rem;
+
+    & span {
+      
+    }
 
     & img[src*="alert-delete"]{
       margin-left: auto;

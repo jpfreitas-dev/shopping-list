@@ -29,51 +29,61 @@
     <section class="add-item">
       <form>
         <input id="newItem" name="newItem" type="text" placeholder="Adicione um novo item">
-        <button type="submit">Adicionar item</button>
+        <button class="btn-submit" type="submit">Adicionar item</button>
       </form>
     </section>
 
     <ul>
       <li>
-        <label>
-          <input type="checkbox">
-          <div class="checkmark"></div>
-          <p>Pão de forma</p>
-        </label>
+        <form>
+          <label>
+            <input type="checkbox">
+            <div class="checkmark"></div>
+            <p>Pão de forma</p>
+          </label>
+        </form>
         <img src="./assets/delete.svg" alt="Ícone de lixeira">
       </li>
       <li>
-        <label>
-          <input type="checkbox">
-          <div class="checkmark"></div>
-          <p>Café preto</p>
-        </label>
+        <form>
+          <label>
+            <input type="checkbox">
+            <div class="checkmark"></div>
+            <p>Café preto</p>
+          </label>
+        </form>
         <img src="./assets/delete.svg" alt="Ícone de lixeira">
       </li>
       <li>
-        <label>
-          <input type="checkbox">
-          <div class="checkmark"></div>
-          <p>Suco de laranja</p>
-        </label>
+        <form>
+          <label>
+            <input type="checkbox">
+            <div class="checkmark"></div>
+            <p>Suco de laranja</p>
+          </label>
+        </form>
         <img src="./assets/delete.svg" alt="Ícone de lixeira">
       </li>
       <li>
-        <label>
-          <input type="checkbox">
-          <div class="checkmark"></div>
-          <p>Bolacha</p>
-        </label>
+        <form>
+          <label>
+            <input type="checkbox">
+            <div class="checkmark"></div>
+            <p>Bolacha</p>
+          </label>
+        </form>
         <img src="./assets/delete.svg" alt="Ícone de lixeira">
       </li>
     </ul>
 
-    <div id="alert">
+    <div id="alert" class="hide">
       <img src="./assets/warning-circle-filled.svg" alt="Ícone de alerta">
       <span>O item foi removido da lista</span>
       <img src="./assets/alert-delete.svg" alt="Ícone para fechar o alerta">
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -55,3 +55,13 @@ button, input[type="text"], #alert {
   outline: none;
   height: 2.75rem;
 }
+
+.hide {
+  display: none !important;
+}
+
+.purchased {
+  border: 1px solid white;
+  background-color: #dedbddfd;
+}
+
