@@ -48,7 +48,10 @@ h1 {
   color: var(--content-primary);
 }
 
-button,
-span {
+button, input[type="text"], #alert {
   font: var(--label);
+  border-radius: .75rem;
+  border: none;
+  outline: none;
+  height: 2.75rem;
 }

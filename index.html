@@ -28,21 +28,50 @@
   <main>
     <section class="add-item">
       <form>
-        <input type="text">
+        <input id="newItem" name="newItem" type="text" placeholder="Adicione um novo item">
         <button type="submit">Adicionar item</button>
       </form>
     </section>
 
     <ul>
-      <li>Pão de forma</li>
-      <li>Café preto</li>
-      <li>Suco de laranja</li>
-      <li>Bolacha</li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <div class="checkmark"></div>
+          <p>Pão de forma</p>
+        </label>
+        <img src="./assets/delete.svg" alt="Ícone de lixeira">
+      </li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <div class="checkmark"></div>
+          <p>Café preto</p>
+        </label>
+        <img src="./assets/delete.svg" alt="Ícone de lixeira">
+      </li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <div class="checkmark"></div>
+          <p>Suco de laranja</p>
+        </label>
+        <img src="./assets/delete.svg" alt="Ícone de lixeira">
+      </li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <div class="checkmark"></div>
+          <p>Bolacha</p>
+        </label>
+        <img src="./assets/delete.svg" alt="Ícone de lixeira">
+      </li>
     </ul>
 
     <div id="alert">
       <img src="./assets/warning-circle-filled.svg" alt="Ícone de alerta">
       <span>O item foi removido da lista</span>
+      <img src="./assets/alert-delete.svg" alt="Ícone para fechar o alerta">
     </div>
   </main>
 </body>
