@@ -18,28 +18,54 @@
 <body>
   <img id="logo" src="./assets/logo.svg" alt="Logo do site">
 
-  <header>
-    <div>
-      <img src="./assets/arrow-left.svg" alt="Ícone de seta">
-      <a href="#">Voltar</a>
-    </div>
-    <h1>Compras da semana</h1>
-  </header>
   <main>
-    <section class="add-item">
-      <form>
-        <input id="newItem" name="newItem" type="text" placeholder="Adicione um novo item">
-        <button class="btn-submit" type="submit">Adicionar item</button>
-      </form>
+    <section id="home-screen" aria-labelledby="home-title">
+      <p class="eyebrow">Organização simples para a sua semana</p>
+      <h1 id="home-title">Lista de compras</h1>
+      <p class="home-description">
+        Adicione os produtos que você precisa comprar e acompanhe o que já foi concluído.
+      </p>
+
+      <button id="start-list" class="primary-button" type="button">Começar lista</button>
+
+      <div class="home-features" aria-label="Recursos da aplicação">
+        <span>✓ Adicione itens</span>
+        <span>✓ Marque como comprado</span>
+        <span>✓ Salve sua lista</span>
+      </div>
+
+      <a class="github-link" href="https://github.com/jpfreitas-dev/shopping-list" target="_blank" rel="noreferrer">
+        Ver código no GitHub
+      </a>
     </section>
 
-    <ul></ul>
+    <section id="list-screen" class="hide" aria-labelledby="page-title">
+      <header>
+        <button id="back-button" class="back-button" type="button">
+          <img src="./assets/arrow-left.svg" alt="">
+          <span>Voltar</span>
+        </button>
+        <h1 id="page-title">Compras da semana</h1>
+      </header>
 
-    <div id="alert" class="hide">
-      <img src="./assets/warning-circle-filled.svg" alt="Ícone de alerta">
-      <span>O item foi removido da lista</span>
-      <img src="./assets/alert-delete.svg" alt="Ícone para fechar o alerta">
-    </div>
+      <section class="add-item">
+        <form id="add-item-form">
+          <label class="sr-only" for="newItem">Nome do item</label>
+          <input id="newItem" name="newItem" type="text" placeholder="Adicione um novo item" autocomplete="off" required>
+          <button class="btn-submit" type="submit">Adicionar item</button>
+        </form>
+      </section>
+
+      <ul aria-live="polite" aria-label="Itens da lista de compras"></ul>
+
+      <div id="alert" class="hide" role="status" aria-live="assertive">
+        <img src="./assets/warning-circle-filled.svg" alt="Ícone de alerta">
+        <span>O item foi removido da lista</span>
+        <button class="alert-close" type="button" aria-label="Fechar alerta">
+          <img src="./assets/alert-delete.svg" alt="">
+        </button>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
